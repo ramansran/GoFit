@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/bitmapItem"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/back_for_history_item"
+    android:padding="@dimen/_8sdp">
+
+
+    <TextView
+        android:id="@+id/topText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="monospace"
+        android:text="Target Completed"
+        android:textColor="@color/White"
+        android:textSize="@dimen/_13sdp"
+        android:layout_alignParentLeft="true"
+        android:layout_toLeftOf="@id/badge"
+        android:textAlignment="center"
+        android:layout_alignParentTop="true"
+        >
+
+    </TextView>
+
+    <TextView
+        android:id="@+id/fromtext"
+        android:layout_below="@id/topText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="monospace"
+        android:text="From"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="11dp"
+        android:textSize="@dimen/_12sdp"
+        android:textColor="@color/White"
+        >
+
+    </TextView>
+
+    <TextView
+        android:id="@+id/totext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/topText"
+        android:layout_alignRight="@id/topText"
+        android:layout_marginRight="@dimen/_15sdp"
+        android:textSize="@dimen/_12sdp"
+        android:layout_marginTop="11dp"
+        android:fontFamily="monospace"
+        android:text="To"
+        android:textColor="@color/White">
+
+    </TextView>
+
+    <TextView
+        android:id="@+id/StratingDate"
+        android:fontFamily="monospace"
+        android:layout_below="@id/fromtext"
+        android:textColor="@color/White"
+        android:layout_alignLeft="@id/fromtext"
+        android:text="11:15:2019"
+        android:textSize="@dimen/_14sdp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+    </TextView>
+
+    <TextView
+        android:layout_below="@id/totext"
+        android:layout_alignRight="@id/totext"
+        android:id="@+id/EndingDate"
+        android:text="11:15:2019"
+        android:fontFamily="monospace"
+        android:textColor="@color/White"
+        android:textSize="@dimen/_14sdp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"></TextView>
+
+    <TextView
+        android:id="@+id/E_Text"
+        android:text="Exercise"
+        android:textColor="@color/White"
+        android:fontFamily="monospace"
+        android:textSize="@dimen/_13sdp"
+        android:layout_below="@id/StratingDate"
+        android:layout_alignLeft="@id/StratingDate"
+        android:layout_marginTop="@dimen/_11sdp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+    </TextView>
+
+    <TextView
+        android:id="@+id/E_Name"
+        android:fontFamily="monospace"
+        android:textColor="@color/White"
+        android:textSize="@dimen/_13sdp"
+        android:layout_below="@id/EndingDate"
+        android:layout_marginTop="@dimen/_11sdp"
+        android:layout_alignRight="@id/EndingDate"
+        android:text="Cycling"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+    </TextView>
+
+    <TextView
+        android:layout_below="@id/E_Text"
+        android:layout_marginTop="@dimen/_9sdp"
+        android:layout_alignRight="@id/E_Text"
+        android:text="1 hours"
+        android:id="@+id/AmoutOfHours"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="monospace"
+        android:textSize="@dimen/_12sdp"
+        android:textColor="@color/White">
+
+    </TextView>
+
+    <TextView
+        android:text="Completed"
+        android:layout_marginTop="@dimen/_9sdp"
+        android:layout_below="@id/E_Name"
+        android:layout_alignRight="@id/E_Name"
+        android:fontFamily="monospace"
+        android:textColor="@color/White"
+        android:background="@color/colorAccent"
+        android:textSize="@dimen/_12sdp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+    </TextView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/badge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:elevation="@dimen/_5sdp"
+        app:cardCornerRadius="@dimen/_10sdp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_4sdp"
+            android:src="@drawable/badge">
+
+        </ImageView>
+    </androidx.cardview.widget.CardView>
+
+    <Button
+        android:id="@+id/sharebutton"
+        android:layout_below="@id/badge"
+        android:layout_marginTop="@dimen/_8sdp"
+        android:layout_alignParentRight="true"
+        android:layout_width="wrap_content"
+        android:background="@drawable/back_for_share_button"
+        android:layout_height="wrap_content"
+        android:text="Share"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</RelativeLayout>

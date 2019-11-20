@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="orange">#FD747F</color>
+    <color name="White">#ffffff</color>
+    <color name="transparent">#cccccc</color>
+    <color name="fill1">#D97D54</color>
+    <color name="statusbar">#E39E7F</color>
+    <color name="askUserTypeFragColor">#87BCBF</color>
+    <color name="askusertypestatusbar">#A5CDCF</color>
+    <color name="askUserTypeFragColor2">#334856</color>
+    <color name="signbackgroud">#D5BBB0</color>
+    <color name="grey">#C9D5DD</color>
+    <color name="grey2">#FFFAFF</color>
+    <color name="remider_background">#DAF0FD</color>
+    <color name="ne">#FCFBFB</color>
+    <color name="newc">#F2F7FA</color>
+    <color name="colorDarkBlue">#27F</color>
+    <color name="colorLightBlue">#DDF</color>
+    <color name="black">#000000</color>
+</resources>

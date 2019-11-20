@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MySharedItems">
+
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.15" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline32"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="1.0" />
+
+
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/topcard"
+        android:elevation="12dp"
+        app:cardBackgroundColor="@color/askusertypestatusbar"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/guideline12"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_90sdp">
+
+
+        <ImageView
+            android:scaleType="fitXY"
+            android:src="@drawable/sharing"
+            android:layout_gravity="center"
+            android:layout_width="@dimen/_190sdp"
+            android:layout_height="match_parent">
+
+        </ImageView>
+
+    </androidx.cardview.widget.CardView>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+
+        android:id="@+id/SharedList"
+        app:layout_constraintTop_toBottomOf="@id/guideline12"
+        app:layout_constraintBottom_toTopOf="@id/guideline32"
+        android:layout_width="match_parent"
+        app:layout_constraintVertical_bias="0"
+        android:layout_height="@dimen/_500sdp">
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

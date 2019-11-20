@@ -1,0 +1,993 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/White"
+    android:layout_height="match_parent"
+
+    tools:context=".Days_Frag">
+
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline77"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.1" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline777"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.15" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline78"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.2" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline79"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.3" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline80"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.4" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline81"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.5" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline82"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.6" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline83"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.7" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline84"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.8" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline85"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.9" />
+
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline86"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="1.0" />
+
+
+    <LinearLayout
+        android:id="@+id/spinnerBox"
+        app:layout_constraintBottom_toTopOf="@id/guideline77"
+        app:layout_constraintTop_toTopOf="parent"
+        android:background="@drawable/third_newback"
+        android:layout_width="match_parent"
+        app:layout_constraintVertical_bias="0"
+        android:layout_height="@dimen/_50sdp">
+
+
+        <TextView
+
+            android:layout_width="0dp"
+            android:layout_weight="5"
+            android:layout_gravity="center"
+            android:text="Week Starts From"
+            android:textAlignment="center"
+            android:textSize="@dimen/_14sdp"
+            android:textColor="@color/White"
+            android:textStyle="bold"
+            android:fontFamily="monospace"
+            android:layout_height="wrap_content">
+
+        </TextView>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/weekList"
+            android:layout_width="0dp"
+            android:layout_weight="6"
+            android:layout_gravity="center"
+            android:padding="@dimen/_2sdp"
+            android:layout_height="@dimen/_40sdp"/>
+
+
+
+    </LinearLayout>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+
+        android:id="@+id/h_recyclerview"
+        app:layout_constraintTop_toBottomOf="@id/guideline77"
+        app:layout_constraintBottom_toTopOf="@id/guideline777"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_25sdp">
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+
+
+
+
+
+
+    <LinearLayout
+        android:id="@+id/day1"
+        android:padding="@dimen/_6sdp"
+        android:background="@color/grey"
+        android:elevation="2dp"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@id/guideline78"
+        app:layout_constraintBottom_toTopOf="@+id/guideline79"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_50sdp">
+
+        <androidx.cardview.widget.CardView
+            android:layout_gravity="top"
+            android:layout_weight="1.3"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/_40sdp">
+
+            <ImageView
+                android:id="@+id/D1"
+                android:scaleType="fitXY"
+                android:src="@drawable/day1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            </ImageView>
+
+        </androidx.cardview.widget.CardView>
+
+        <Button
+            android:id="@+id/skipButtonDay1"
+            android:layout_weight="2"
+            android:layout_marginLeft="@dimen/_5sdp"
+            android:layout_width="0dp"
+            android:text="skip"
+            android:background="@drawable/back_for_share_button"
+            android:textSize="@dimen/_8sdp"
+            android:layout_gravity="center"
+            android:layout_height="@dimen/_25sdp">
+
+        </Button>
+        <NumberPicker
+            android:id="@+id/hoursPickerDay1"
+            android:layout_weight="2"
+            android:layout_marginLeft="@dimen/_5sdp"
+            android:layout_gravity="center"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/_40sdp">
+
+        </NumberPicker>
+
+        <TextView
+            android:id="@+id/HtextDay1"
+            android:layout_weight="1"
+            android:text="H"
+            android:fontFamily="monospace"
+            android:textStyle="bold"
+            android:layout_gravity="center"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/_15sdp">
+
+        </TextView>
+
+        <NumberPicker
+            android:layout_marginLeft="@dimen/_5sdp"
+            android:layout_gravity="center"
+            android:id="@+id/minutesPickerDay1"
+            android:layout_weight="2"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/_40sdp">
+
+        </NumberPicker>
+
+        <TextView
+            android:id="@+id/MtextDay1"
+            android:layout_weight="1"
+            android:text="M"
+            android:layout_gravity="center"
+            android:fontFamily="monospace"
+            android:textStyle="bold"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/_15sdp">
+
+        </TextView>
+
+
+
+        <Button
+            android:layout_weight="2"
+            android:text="done"
+            android:background="@drawable/back_for_share_button"
+            android:textSize="@dimen/_8sdp"
+            android:id="@+id/doneButtonDay1"
+            android:layout_gravity="center"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/_25sdp">
+
+        </Button>
+
+    </LinearLayout>
+
+
+
+
+
+
+
+    <LinearLayout
+        android:id="@+id/day2"
+        android:padding="@dimen/_6sdp"
+        android:background="@color/grey"
+        android:elevation="2dp"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@id/guideline79"
+        app:layout_constraintBottom_toTopOf="@+id/guideline80"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_50sdp">
+
+        <androidx.cardview.widget.CardView
+            android:layout_gravity="top"
+            android:layout_weight="1.3"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/_40sdp">
+
+            <ImageView
+                android:id="@+id/D2"
+                android:scaleType="fitXY"
+                android:src="@drawable/day2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            </ImageView>
+
+        </androidx.cardview.widget.CardView>
+
+        <Button
+            android:id="@+id/skipButtonDay2"
+            android:layout_weight="2"
+            android:layout_marginLeft="@dimen/_5sdp"
+            android:layout_width="0dp"
+            android:text="skip"
+            android:background="@drawable/back_for_share_button"
+            android:textSize="@dimen/_8sdp"
+            android:layout_gravity="center"
+            android:layout_height="@dimen/_25sdp">
+
+        </Button>
+        <NumberPicker
+            android:id="@+id/hoursPickerDay2"
+            android:layout_weight="2"
+            android:layout_marginLeft="@dimen/_5sdp"
+            android:layout_gravity="center"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/_40sdp">
+
+        </NumberPicker>
+
+        <TextView
+            android:id="@+id/HtextDay2"
+            android:layout_weight="1"
+            android:text="H"
+            android:fontFamily="monospace"
+            android:textStyle="bold"
+            android:layout_gravity="center"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/_15sdp">
+
+        </TextView>
+
+        <NumberPicker
+            android:layout_marginLeft="@dimen/_5sdp"
+            android:layout_gravity="center"
+            android:id="@+id/minutesPickerDay2"
+            android:layout_weight="2"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/_40sdp">
+
+        </NumberPicker>
+
+        <TextView
+            android:id="@+id/MtextDay2"
+            android:layout_weight="1"
+            android:text="M"
+            android:layout_gravity="center"
+            android:fontFamily="monospace"
+            android:textStyle="bold"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/_15sdp">
+
+        </TextView>
+
+        <Button
+            android:layout_weight="2"
+            android:text="done"
+            android:background="@drawable/back_for_share_button"
+            android:textSize="@dimen/_8sdp"
+            android:id="@+id/doneButtonDay2"
+            android:layout_gravity="center"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/_25sdp">
+
+        </Button>
+
+    </LinearLayout>
+
+
+
+
+
+
+
+
+
+    <LinearLayout
+        android:id="@+id/day3"
+        android:padding="@dimen/_6sdp"
+        android:background="@color/grey"
+        android:elevation="2dp"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@id/guideline80"
+        app:layout_constraintBottom_toTopOf="@+id/guideline81"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_50sdp">
+
+        <androidx.cardview.widget.CardView
+            android:layout_gravity="top"
+            android:layout_weight="1.3"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/_40sdp">
+
+            <ImageView
+                android:id="@+id/D3"
+                android:scaleType="fitXY"
+                android:src="@drawable/day3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            </ImageView>
+
+        </androidx.cardview.widget.CardView>
+
+        <Button
+            android:id="@+id/skipButtonDay3"
+            android:layout_weight="2"
+            android:layout_marginLeft="@dimen/_5sdp"
+            android:layout_width="0dp"
+            android:text="skip"
+            android:background="@drawable/back_for_share_button"
+            android:textSize="@dimen/_8sdp"
+            android:layout_gravity="center"
+            android:layout_height="@dimen/_25sdp">
+
+        </Button>
+        <NumberPicker
+            android:id="@+id/hoursPickerDay3"
+            android:layout_weight="2"
+            android:layout_marginLeft="@dimen/_5sdp"
+            android:layout_gravity="center"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/_40sdp">
+
+        </NumberPicker>
+
+        <TextView
+            android:id="@+id/HtextDay3"
+            android:layout_weight="1"
+            android:text="H"
+            android:fontFamily="monospace"
+            android:textStyle="bold"
+            android:layout_gravity="center"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/_15sdp">
+
+        </TextView>
+
+        <NumberPicker
+            android:layout_marginLeft="@dimen/_5sdp"
+            android:layout_gravity="center"
+            android:id="@+id/minutesPickerDay3"
+            android:layout_weight="2"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/_40sdp">
+
+        </NumberPicker>
+
+        <TextView
+            android:id="@+id/MtextDay3"
+            android:layout_weight="1"
+            android:text="M"
+            android:layout_gravity="center"
+            android:fontFamily="monospace"
+            android:textStyle="bold"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/_15sdp">
+
+        </TextView>
+
+        <Button
+            android:layout_weight="2"
+            android:text="done"
+            android:background="@drawable/back_for_share_button"
+            android:textSize="@dimen/_8sdp"
+            android:id="@+id/doneButtonDay3"
+            android:layout_gravity="center"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/_25sdp">
+
+        </Button>
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:id="@+id/day4"
+        android:padding="@dimen/_6sdp"
+        android:background="@color/grey"
+        android:elevation="2dp"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@id/guideline81"
+        app:layout_constraintBottom_toTopOf="@+id/guideline82"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_50sdp">
+
+        <androidx.cardview.widget.CardView
+            android:layout_gravity="top"
+            android:layout_weight="1.3"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/_40sdp">
+
+            <ImageView
+                android:id="@+id/D4"
+                android:scaleType="fitXY"
+                android:src="@drawable/day4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            </ImageView>
+
+        </androidx.cardview.widget.CardView>
+
+        <Button
+            android:id="@+id/skipButtonDay4"
+            android:layout_weight="2"
+            android:layout_marginLeft="@dimen/_5sdp"
+            android:layout_width="0dp"
+            android:text="skip"
+            android:background="@drawable/back_for_share_button"
+            android:textSize="@dimen/_8sdp"
+            android:layout_gravity="center"
+            android:layout_height="@dimen/_25sdp">
+
+        </Button>
+        <NumberPicker
+            android:id="@+id/hoursPickerDay4"
+            android:layout_weight="2"
+            android:layout_marginLeft="@dimen/_5sdp"
+            android:layout_gravity="center"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/_40sdp">
+
+        </NumberPicker>
+
+        <TextView
+            android:id="@+id/HtextDay4"
+            android:layout_weight="1"
+            android:text="H"
+            android:fontFamily="monospace"
+            android:textStyle="bold"
+            android:layout_gravity="center"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/_15sdp">
+
+        </TextView>
+
+        <NumberPicker
+            android:layout_marginLeft="@dimen/_5sdp"
+            android:layout_gravity="center"
+            android:id="@+id/minutesPickerDay4"
+            android:layout_weight="2"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/_40sdp">
+
+        </NumberPicker>
+
+        <TextView
+            android:id="@+id/MtextDay4"
+            android:layout_weight="1"
+            android:text="M"
+            android:layout_gravity="center"
+            android:fontFamily="monospace"
+            android:textStyle="bold"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/_15sdp">
+
+        </TextView>
+
+        <Button
+            android:layout_weight="2"
+            android:text="done"
+            android:background="@drawable/back_for_share_button"
+            android:textSize="@dimen/_8sdp"
+            android:id="@+id/doneButtonDay4"
+            android:layout_gravity="center"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/_25sdp">
+
+        </Button>
+
+
+
+    </LinearLayout>
+
+
+
+
+
+
+    <LinearLayout
+        android:id="@+id/day5"
+        android:padding="@dimen/_6sdp"
+        android:background="@color/grey"
+        android:elevation="2dp"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@id/guideline82"
+        app:layout_constraintBottom_toTopOf="@+id/guideline83"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_50sdp">
+
+        <androidx.cardview.widget.CardView
+            android:layout_gravity="top"
+            android:layout_weight="1.3"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/_40sdp">
+
+            <ImageView
+                android:id="@+id/D5"
+                android:scaleType="fitXY"
+                android:src="@drawable/day5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            </ImageView>
+
+        </androidx.cardview.widget.CardView>
+
+        <Button
+            android:id="@+id/skipButtonDay5"
+            android:layout_weight="2"
+            android:layout_marginLeft="@dimen/_5sdp"
+            android:layout_width="0dp"
+            android:text="skip"
+            android:background="@drawable/back_for_share_button"
+            android:textSize="@dimen/_8sdp"
+            android:layout_gravity="center"
+            android:layout_height="@dimen/_25sdp">
+
+        </Button>
+        <NumberPicker
+            android:id="@+id/hoursPickerDay5"
+            android:layout_weight="2"
+            android:layout_marginLeft="@dimen/_5sdp"
+            android:layout_gravity="center"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/_40sdp">
+
+        </NumberPicker>
+
+        <TextView
+            android:id="@+id/HtextDay5"
+            android:layout_weight="1"
+            android:text="H"
+            android:fontFamily="monospace"
+            android:textStyle="bold"
+            android:layout_gravity="center"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/_15sdp">
+
+        </TextView>
+
+        <NumberPicker
+            android:layout_marginLeft="@dimen/_5sdp"
+            android:layout_gravity="center"
+            android:id="@+id/minutesPickerDay5"
+            android:layout_weight="2"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/_40sdp">
+
+        </NumberPicker>
+
+        <TextView
+            android:id="@+id/MtextDay5"
+            android:layout_weight="1"
+            android:text="M"
+            android:layout_gravity="center"
+            android:fontFamily="monospace"
+            android:textStyle="bold"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/_15sdp">
+
+        </TextView>
+
+        <Button
+            android:layout_weight="2"
+            android:text="done"
+            android:background="@drawable/back_for_share_button"
+            android:textSize="@dimen/_8sdp"
+            android:id="@+id/doneButtonDay5"
+            android:layout_gravity="center"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/_25sdp">
+
+        </Button>
+
+
+
+    </LinearLayout>
+
+
+
+
+
+
+
+
+
+
+    <LinearLayout
+        android:id="@+id/day6"
+        android:padding="@dimen/_6sdp"
+        android:background="@color/grey"
+        android:elevation="2dp"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@id/guideline83"
+        app:layout_constraintBottom_toTopOf="@+id/guideline84"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_50sdp">
+
+        <androidx.cardview.widget.CardView
+            android:layout_gravity="top"
+            android:layout_weight="1.3"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/_40sdp">
+
+            <ImageView
+                android:id="@+id/D6"
+                android:scaleType="fitXY"
+                android:src="@drawable/day6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            </ImageView>
+
+        </androidx.cardview.widget.CardView>
+
+        <Button
+            android:id="@+id/skipButtonDay6"
+            android:layout_weight="2"
+            android:layout_marginLeft="@dimen/_5sdp"
+            android:layout_width="0dp"
+            android:text="skip"
+            android:background="@drawable/back_for_share_button"
+            android:textSize="@dimen/_8sdp"
+            android:layout_gravity="center"
+            android:layout_height="@dimen/_25sdp">
+
+        </Button>
+        <NumberPicker
+            android:id="@+id/hoursPickerDay6"
+            android:layout_weight="2"
+            android:layout_marginLeft="@dimen/_5sdp"
+            android:layout_gravity="center"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/_40sdp">
+
+        </NumberPicker>
+
+        <TextView
+            android:id="@+id/HtextDay6"
+            android:layout_weight="1"
+            android:text="H"
+            android:fontFamily="monospace"
+            android:textStyle="bold"
+            android:layout_gravity="center"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/_15sdp">
+
+        </TextView>
+
+        <NumberPicker
+            android:layout_marginLeft="@dimen/_5sdp"
+            android:layout_gravity="center"
+            android:id="@+id/minutesPickerDay6"
+            android:layout_weight="2"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/_40sdp">
+
+        </NumberPicker>
+
+        <TextView
+            android:id="@+id/MtextDay6"
+            android:layout_weight="1"
+            android:text="M"
+            android:layout_gravity="center"
+            android:fontFamily="monospace"
+            android:textStyle="bold"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/_15sdp">
+
+        </TextView>
+
+        <Button
+            android:layout_weight="2"
+            android:text="done"
+            android:background="@drawable/back_for_share_button"
+            android:textSize="@dimen/_8sdp"
+            android:id="@+id/doneButtonDay6"
+            android:layout_gravity="center"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/_25sdp">
+
+        </Button>
+
+
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:id="@+id/day7"
+        android:padding="@dimen/_6sdp"
+        android:background="@color/grey"
+        android:elevation="2dp"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@id/guideline84"
+        app:layout_constraintBottom_toTopOf="@+id/guideline85"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_50sdp">
+
+        <androidx.cardview.widget.CardView
+            android:layout_gravity="top"
+            android:layout_weight="1.3"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/_40sdp">
+
+            <ImageView
+                android:id="@+id/D7"
+                android:scaleType="fitXY"
+                android:src="@drawable/day7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            </ImageView>
+
+        </androidx.cardview.widget.CardView>
+
+        <Button
+            android:id="@+id/skipButtonDay7"
+            android:layout_weight="2"
+            android:layout_marginLeft="@dimen/_5sdp"
+            android:layout_width="0dp"
+            android:text="skip"
+            android:background="@drawable/back_for_share_button"
+            android:textSize="@dimen/_8sdp"
+            android:layout_gravity="center"
+            android:layout_height="@dimen/_25sdp">
+
+        </Button>
+        <NumberPicker
+            android:id="@+id/hoursPickerDay7"
+            android:layout_weight="2"
+            android:layout_marginLeft="@dimen/_5sdp"
+            android:layout_gravity="center"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/_40sdp">
+
+        </NumberPicker>
+
+        <TextView
+            android:id="@+id/HtextDay7"
+            android:layout_weight="1"
+            android:text="H"
+            android:fontFamily="monospace"
+            android:textStyle="bold"
+            android:layout_gravity="center"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/_15sdp">
+
+        </TextView>
+
+        <NumberPicker
+            android:layout_marginLeft="@dimen/_5sdp"
+            android:layout_gravity="center"
+            android:id="@+id/minutesPickerDay7"
+            android:layout_weight="2"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/_40sdp">
+
+        </NumberPicker>
+
+        <TextView
+            android:id="@+id/MtextDay7"
+            android:layout_weight="1"
+            android:text="M"
+            android:layout_gravity="center"
+            android:fontFamily="monospace"
+            android:textStyle="bold"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/_15sdp">
+
+        </TextView>
+
+        <Button
+            android:layout_weight="2"
+            android:text="done"
+            android:background="@drawable/back_for_share_button"
+            android:textSize="@dimen/_8sdp"
+            android:id="@+id/doneButtonDay7"
+            android:layout_gravity="center"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/_25sdp">
+
+        </Button>
+
+
+
+    </LinearLayout>
+
+
+
+
+
+
+
+    <LinearLayout
+        app:layout_constraintStart_toStartOf="parent"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@id/guideline777"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/guideline78"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_30sdp">
+
+        <TextView
+            android:layout_weight="2"
+            android:text=""
+            android:gravity="center_vertical"
+            android:textAlignment="center"
+            android:textSize="@dimen/_9sdp"
+            android:fontFamily="monospace"
+            android:textColor="#fff"
+            android:id="@+id/Exercise_Name"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/_25sdp">
+
+        </TextView>
+
+        <TextView
+            android:layout_weight="4"
+            android:text=""
+            android:layout_gravity="center"
+            android:textAlignment="center"
+            android:textSize="@dimen/_9sdp"
+            android:fontFamily="monospace"
+            android:textColor="#000"
+            android:id="@+id/Exercise_Splited_Hours"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/_25sdp">
+
+        </TextView>
+
+
+
+        <ProgressBar
+            android:layout_weight="4"
+            android:id="@+id/progressSingle"
+            android:visibility="invisible"
+            android:layout_gravity="center"
+            android:layout_marginRight="@dimen/_4sdp"
+            android:progressDrawable="@drawable/rounded_progress_bar"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/_15sdp">
+        </ProgressBar>
+
+
+    </LinearLayout>
+
+
+
+
+
+
+
+
+
+
+    <LinearLayout
+        android:id="@+id/bottom_menu"
+        android:layout_width="match_parent"
+        android:background="@color/transparent"
+        android:layout_height="@dimen/_35sdp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintVertical_bias="0.93"
+        app:layout_constraintTop_toTopOf="@+id/guideline76">
+
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_weight="1"
+            android:layout_gravity="bottom"
+            android:src="@drawable/exercise"
+            android:id="@+id/exercise_screen">
+        </ImageView>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_weight="1"
+            android:layout_gravity="bottom"
+            android:src="@drawable/trainer"
+            android:id="@+id/trainers_screen">
+        </ImageView>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_gravity="bottom"
+            android:layout_weight="1"
+            android:src="@drawable/chat"
+
+            android:id="@+id/Chat_screen">
+        </ImageView>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_gravity="bottom"
+            android:layout_weight="1"
+            android:src="@drawable/profile"
+            android:id="@+id/Profile_screen">
+        </ImageView>
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
